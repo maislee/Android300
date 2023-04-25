@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_info"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:text="30410 이준섭"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="440dp"
+        android:src="@drawable/info1"
+        android:id="@+id/img_info"
+        android:layout_below="@id/title_info"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_info"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@id/img_info"
+        android:text="수술 후에는 충분한 휴식과 관리를 지속적으로 해주시기 바랍니다."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ingo_back"
+        android:layout_below="@id/txt_info"
+        android:layout_alignParentRight="true"
+        android:text="뒤로"/>
+
+
+</RelativeLayout>
